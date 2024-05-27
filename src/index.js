@@ -57,7 +57,7 @@ app.listen(PORT,()=>{
 app.get("/",async(req,res)=>{
     redisClient.set('products',"products....");
 
-    res.status(200).json({message:"products set successfully",usingDockerHubImage:true})
+    res.status(200).json({message:"products set successfully",usingDockerHubImage:true,test:1})
 })
 
 app.get("/data",async(req,res)=>{
