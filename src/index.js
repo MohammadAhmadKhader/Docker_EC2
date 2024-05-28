@@ -60,7 +60,10 @@ app.get("/",async(req,res)=>{
     console.log(`traffic from containerID : ${os.hostname}`);
     res.status(200).json({message:"products set successfully",
     usingDockerHubImage:true,
-    test:1,test2:2,test3:3,isCreatedNewImageAndPulledAutomatically:true})
+    test:1,test2:2,test3:3,
+    isCreatedNewImageAndPulledAutomatically:true,
+    usingDockerSwarm:true
+    })
 })
 
 app.get("/data",async(req,res)=>{

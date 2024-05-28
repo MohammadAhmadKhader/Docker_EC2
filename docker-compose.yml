@@ -1,7 +1,7 @@
 version: '3'
 services:
   node-app:
-    container_name: express-node-app-container
+    # container_name: express-node-app-container
     image: mohammadkhader/ec2-docker
     env_file:
       - ./.env
