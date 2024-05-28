@@ -13,7 +13,6 @@ services:
       restart_policy:
         condition: on-failure
         delay: 5s
-      update_config: 
     depends_on:
       - mongo
       - redis
